@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #fdf7eb;
+    --body-color: #000000;
+    --orange-color: #fca15f;
+    --teal-color: #4cbba0;
+    --grey-color: #d9d9d9;
+    --low-teal-color: hsla(165, 45%, 52%, 0.374);
+
+
+
+    --trans-color: #fdf7eb00;
+}
+
+* {
+    background-color: var(--bg-color);
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+}
+
+nav, .navbar {
+    z-index: 10;
+    position: fixed;
+    height: auto;
+
+    bottom: 7vh;
+
+    background-color: var(--trans-color);
+
+}
+
+.navbar-brand, .navbar-nav a {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.5em;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: var(--trans-color) !important;
+}
+
+.container-fluid {
+    height: auto;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+
+    padding: 2em;
+}
+
+h1 {
+    color: var(--body-color);
+    font-size: 12.5em;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+    z-index: 8;
+    position: relative;
+    top: -5vh;
+
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 2em;
+    text-align: left;
+
+    margin-bottom: 1em;
+}
+
+.container-fluid {
+    position: relative;
+    top: 5vh;
+}
+
+
+
+
+
+
+/*
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.instrument-sans-<uniquifier> {
+  font-family: "Instrument Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*/
