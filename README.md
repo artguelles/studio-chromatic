@@ -2,7 +2,7 @@ Basándose en la palabra “cromático”, en inglés “chromatic”, es un stu
 
 Chromatic se destaca en la variedad de servicios que ofrece y como empresa, permite la creación de diversas marcas especializadas en cargos de la industria del diseño como Digital, Branding, Producción, Motion Graphics, Estrategia, Medios, entre otros. 
 
-Se plantea una marca de diseño gráfico, comunicación y publicidad dentro de Chromatik S.L.
+Se plantea una marca de diseño gráfico, comunicación y publicidad dentro de Chromatic S.L.
 
 Studio de diseño conformado por:
 María Victoria Argüelles S. & Clara Gómez M. | Grupo 4.3
