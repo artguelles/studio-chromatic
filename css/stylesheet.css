@@ -5,10 +5,6 @@
     --teal-color: #4cbba0;
     --grey-color: #d9d9d9;
     --low-teal-color: hsla(165, 45%, 52%, 0.374);
-
-
-
-    --trans-color: #fdf7eb00;
 }
 
 * {
@@ -29,10 +25,11 @@ nav, .navbar {
     z-index: 10;
     position: fixed;
     height: auto;
+    width: 100vw;
 
     bottom: 7vh;
 
-    background-color: var(--trans-color);
+    background-color: transparent;
 
 }
 
@@ -41,7 +38,15 @@ nav, .navbar {
     font-weight: 400;
     font-style: normal;
 
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin: 0;
+}
+
+.nav-item {
+    background-color: transparent;
 }
 
 .bg-body-tertiary {
@@ -49,8 +54,39 @@ nav, .navbar {
     background-color: var(--trans-color) !important;
 }
 
+.dropdown {
+    margin-left: 5em;
+    position: relative;
+    left: 0;
+}
+
+.dropdown-toggle {
+    position: absolute;
+    right: -35vw;
+    white-space: nowrap;
+}
+
+.dropdown-menu {
+    z-index: 7;
+    position: absolute;
+    bottom: 10vh;
+    right: -35vw;
+    margin-left: 20em;
+}
+
 .container-fluid {
     height: auto;
+}
+
+.btn-warning {
+    border-radius: 25%;
+    border: 1px solid #000;
+    background-color: var(--orange-color);
+    font-size: 1em;
+}
+
+.rounded {
+    border-radius: 25% !important;
 }
 
 section {
@@ -75,8 +111,31 @@ h1 {
     margin-bottom: 0;
 }
 
+.italic {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+
+    background-color: transparent;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.right {
+    display: flex;
+    text-align: right;
+}
+
+.bottom {
+    align-items: flex-end !important;
+    margin-bottom: 0.5em;
+}
+
 p {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
 
     margin-bottom: 1em;
@@ -88,9 +147,48 @@ p {
 }
 
 
+footer {
+    padding: 2em;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--teal-color);
+}
 
+footer h1, footer li, footer ul {
+    color: white;
+    background-color: transparent;
+}
 
+footer li, footer ul {
+    height: fit-content;
 
+}
+
+#special-foot {
+    line-height: 80%;
+}
+
+footer div {
+    background-color: transparent;
+    height: fit-content;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    height: fit-content;
+}
+
+footer li {
+    padding: 0;
+}
+
+footer li p {
+    background-color: transparent;
+    font-size: 0.1em;
+    height: fit-content;
+    
+}
 
 /*
 
