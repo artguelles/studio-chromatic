@@ -18,7 +18,7 @@ body {
 
 header {
     height: 100vh;
-    width: 100vw;
+    width: auto;
 }
 
 header div {
@@ -44,6 +44,8 @@ header p {
 
 #div-video {
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 #overlay-div {
@@ -57,10 +59,9 @@ header p {
 
 
 video {
-    position: inherit;
-    min-width: 100%;
-    overflow: hidden;
-    z-index: -1;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 .asterisco {
@@ -164,7 +165,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 
 section {
     height: 100vh;
-    width: 100vw;
+    width: auto;
 
     padding: 2em;
 }
@@ -242,7 +243,7 @@ p {
 footer {
     padding: 2em;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     background-color: var(--teal-color);
 }
 
