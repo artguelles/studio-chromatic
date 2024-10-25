@@ -67,7 +67,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 
 .dropdown-toggle {
     position: absolute;
-    right: -35vw;
+    /*right: -35vw;*/
     white-space: nowrap;
 }
 
