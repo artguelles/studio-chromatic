@@ -105,17 +105,26 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 }
 
 .dropdown {
-    margin-left: 10em;
+    /*margin-left: 10em;*/
     position: relative;
-    left: 0;    
+    left: 0;  
 }
 
 .dropdown-toggle {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 1em;
+    bottom: 0.7em;
+}
+
+/*.dropdown-toggle {
     position: absolute;
-    /*right: -35vw;*/
+    /*right: -35vw;*//*
     white-space: nowrap;
     left: 50%;
-}
+}*/
 
 .dropdown-menu {
     z-index: 7;
@@ -182,10 +191,14 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 }
 
 section {
-    height: 100vh;
-    width: auto;
+    /*height: 100vh;
+    width: auto; */
+
+    width: 100vw;
+    height: auto;
 
     padding: 2em;
+    margin-bottom: 5em;
 }
 
 h1 {
@@ -213,7 +226,7 @@ h1 {
 
 .bold {
     font-family: "Instrument Sans", sans;
-    font-weight: 800;  
+    font-weight: 600;  
 
     background-color: transparent;
 }
@@ -298,6 +311,7 @@ p {
 
     display: flex;
     align-items: center;
+    justify-content: flex-end
 }
 
 .right-team li {
@@ -318,9 +332,11 @@ p {
 
 #off-set {
     position: absolute;
-    left: 40%;
+    left: 30%;
     width: 100% !important;
-    margin-top: -8%;
+    margin-top: -6%;
+
+    /*ARREGLAR PQ SE DESBORDA*/
 }
 
 
