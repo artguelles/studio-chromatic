@@ -187,12 +187,14 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 
 #logo img {
     width: 15%;
+    /* mix-blend-mode: difference; */
     
 }
 
 section {
     /*height: 100vh;
     width: auto; */
+    /* background-color: var(--bg-color); */
 
     width: 100vw;
     height: auto;
@@ -258,6 +260,15 @@ p {
     /*top: 5vh;*/
 }
 
+.img-div {
+    height: fit-content;
+    width: 100%;
+}
+
+.main-img {
+    height: auto;
+    width: 100%;
+}
 
 /*WHO ARE WE*/
 
@@ -275,6 +286,10 @@ p {
     font-size: 1em;
     font-weight: 200;
     
+}
+
+#dream-team .asterisco{
+    top: 5%;
 }
 
 #marivi {
@@ -357,7 +372,17 @@ p {
     top: 379%;
 }
 
-/**/
+/*SOCIALS*/
+/* #social {
+    height: 100vh;
+} */
+
+#social .asterisco {
+    left: 32%;
+    top: 50%;
+}
+
+/*FOOTER*/
 
 footer {
     padding: 2em;
@@ -382,6 +407,11 @@ footer div {
     width: 100%;
 }
 
+footer .row {
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+}
+
 footer .col {
     background-color: transparent;
     height: fit-content;
@@ -393,8 +423,11 @@ ul {
     height: fit-content;
 }
 
-footer.container-fluid {
-    top: 2em;
+footer .container-fluid {
+    /* top: 2em; */
+    margin-top: 0.2em;
+    border-top: 2px solid white !important;
+    padding-top: 0.1em !important;
 }
 
 footer p {
@@ -402,7 +435,39 @@ footer p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.1em;
+    font-size: 0.15em;
+
+    margin-bottom: 0;
+}
+
+footer h2 {
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.35em;
+
+    letter-spacing: -3.2px;
+
+    border-top: 2px solid white;
+    padding-top: 0.5em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: var(--orange-color);
+}
+
+footer iframe{
+    width: 100%;
+    height: auto;
+    border: 10px var(--orange-color);
+    border-radius: 20px;
 }
 
 /*
