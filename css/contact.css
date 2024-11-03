@@ -1,3 +1,5 @@
+/* CONTACT PAGE CSS */
+
 :root {
     --bg-color: #fdf7eb;
     --body-color: #000000;
@@ -68,7 +70,6 @@ header p {
     margin-bottom: 0;
 
 }
-
 
 
 video {
@@ -196,7 +197,6 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     background-color: var(--teal-color);
     font-size: 1em;
     color: var(--bg-color);
-    transition: all 0.5s ease;
 }
 
 .rounded {
@@ -293,7 +293,7 @@ h2 {
 p {
     font-size: 1.5em;
     text-align: left;
-    color: black;
+    color: rgb(255, 255, 255);
 
     margin-bottom: 1em;
 }
@@ -338,7 +338,7 @@ p {
 
 #dream-team a:hover {
     color: var(--orange-color);
-    transition: all 0.5s ease;
+    transition: all 4s ease;
 }
 
 #light-teal-dream {
@@ -353,7 +353,6 @@ p {
     height: auto;
     width: 100%;
 }
-
 
 #marivi h4, #clara h4 {
     font-family: "Instrument Serif", serif;
@@ -444,9 +443,90 @@ p {
 
 #social a:hover {
     color: var(--orange-color);
+    transition: all 4s ease;
 }
 
-/*FOOTER*/
+/* CONTACT US */
+
+#redirect {
+    height: auto;
+    width: 100%;
+
+    z-index: 13;
+    position: fixed;
+
+    top: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact-form {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    margin-bottom: 5em;
+}
+
+form {
+    background-color: var(--orange-color);
+    padding: 1.1em;
+    margin: auto;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-left {
+    padding-right: 0.5em;
+}
+
+.form-right {
+    padding-left: 0.5em;
+}
+
+.form-100 {
+    height: auto;
+    width: 100%;
+}
+
+#inputAddress2 {
+    height: 15em;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+.btn-primary {
+    display: flex;
+    text-align: center;
+    border-radius: 50px;
+    background-color: var(--body-color);
+    font-size: 1em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#button-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
 
 footer {
     padding: 2em;
@@ -456,8 +536,9 @@ footer {
 }
 
 footer h1, footer li, footer ul {
-    color: white;
+    color: var(--bg-color);
     background-color: transparent;
+   
 }
 
 #special-foot {
@@ -526,7 +607,7 @@ footer a {
 
 footer a:hover {
     color: var(--orange-color);
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 footer iframe{
@@ -535,28 +616,3 @@ footer iframe{
     border: 10px var(--orange-color);
     border-radius: 20px;
 }
-
-/*
-
-.instrument-serif-regular {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.instrument-serif-regular-italic {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.instrument-sans-<uniquifier> {
-  font-family: "Instrument Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-*/
