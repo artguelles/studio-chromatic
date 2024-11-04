@@ -444,6 +444,7 @@ p {
 
 #social a:hover {
     color: var(--orange-color);
+    transition: all 0.2s ease;
 }
 
 /*FOOTER*/
@@ -501,6 +502,7 @@ footer p {
     font-weight: 400;
     font-style: normal;
     font-size: 0.15em;
+    color: white;
 
     margin-bottom: 0;
 }
