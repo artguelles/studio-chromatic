@@ -5,6 +5,9 @@
     --teal-color: #4cbba0;
     --grey-color: #d9d9d9;
     --low-teal-color: hsla(165, 45%, 52%, 0.374);
+
+    --lightbox: rgb(0 0 0 / 0.75);
+    --carousel-text: #fff;
 }
 
 html {
@@ -79,6 +82,17 @@ video {
 
 .asterisco {
     position: absolute;
+    animation: rotate 5s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /*nav {
@@ -577,3 +591,6 @@ footer iframe{
 }
 
 */
+
+/* PRUEBA GALERIA CLASE */
+
