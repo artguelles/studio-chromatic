@@ -1,3 +1,5 @@
+/* ERROR PAGE CSS */
+
 :root {
     --bg-color: #fdf7eb;
     --body-color: #000000;
@@ -9,11 +11,11 @@
 
 html {
     /*SNAP SCROLL*/
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--orange-color);
     font-family: "Instrument Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -22,8 +24,6 @@ body {
 
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23000" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>'), auto;
 }
-
-
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {
@@ -43,146 +43,16 @@ body {
     background: var(--teal-color);
 }
 
-header {
-    height: 100vh;
-    width: auto;
-}
-
-header div {
-    width: 100%;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-
-    z-index: 3;
-}
-
-header div img {
-    width: 50%;
-    margin-bottom: 1em;
-}
-
-header p {
-    font-size: 2em;
-}
-
-#div-video {
-    overflow: hidden;
-    /*height: 100%;
-    width: 100%;*/
-}
-
-#overlay-vid {
-    /*width: 100%;
-    height: 100vw;*/
-    background-color: var(--low-teal-color);
-    /*opacity: 0.7;*/
-
-    z-index: 2;
-}
-
-#overlay-vid img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
-
-}
-
-
-
-video {
-    width: auto;
-    height: fit-content;
-    vertical-align: middle;
-}
-
 .asterisco {
     position: absolute;
-    animation: rotate 5s linear infinite;
 }
 
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-nav, .navbar {
-    z-index: 10;
-    position: fixed;
-    height: auto;
-    width: 100%;
-
-    bottom: 1vh;
-    background-color: transparent;
-}
-
-.navbar-brand, .navbar-nav a {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-size: 2em;
-}
-
-ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
-    margin: 0;
-}
-
-.nav-item {
-    background-color: transparent;
-}
-
-.bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: var(--trans-color) !important;
-}
-
-.dropdown {
-    position: relative;
-    left: 0;  
-}
-
-.dropdown-toggle {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    right: 1em;
-    bottom: 0.7em;
-}
-
-.menu-show {
+.toast {
     display: block;
-}
-
-.dropdown-menu {
-    z-index: 7;
-    position: absolute;
-    top: 20vh;
-    left: 0;
-    margin-left: 0em;
-
-    background-color: var(--teal-color);
-}
-
-.dropdown-item {
-    color: var(--bg-color);
-}
-
-/* cuando hagamos el menu responsive tenemos 100% que ir cambiandole el left */
-.dropdown-menu[data-bs-popper] {
-    top: -180% !important;
-    left: 22.5em !important;
-    /* left: 5.5em !important; */
-    margin-top: var(--bs-dropdown-spacer);
+    position: fixed;
+    z-index: 15;
+    bottom: 5vh;
+    right: 3vw;
 }
 
 .container-fluid {
@@ -216,7 +86,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     background-color: var(--teal-color);
     font-size: 1em;
     color: var(--bg-color);
-    transition: all 0.5s ease;
+    font-family: "Instrument Sans", serif;
 }
 
 .rounded {
@@ -226,26 +96,17 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 #logo {
     z-index: 13;
     position: fixed;
-
+    /* height: auto;
+    width: auto; */
     height: auto;
     width: 100%;
 
     top: 5vh;
 
-    /* display: flex;
-    justify-content: flex-end; */
-    /* padding-right: 2vw; */
-    /* padding-right: 2em; */
-}
-
-.logo-fixed {
-    display: flex !important; 
+    display: flex;
     justify-content: flex-end;
+    /* padding-right: 2vw; */
     padding-right: 2em;
-}
-
-.logo-none {
-    display: none !important;
 }
 
 #logo img {
@@ -254,31 +115,10 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     
 }
 
-/* MENU HAMBURGUESA */
-.navbar-toggler {
-    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    font-size: var(--bs-navbar-toggler-font-size);
-    line-height: 2;
-    color: var(--body-color);
-    background-color: var(--teal-color);
-    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-    border-radius: /* var(--bs-navbar-toggler-border-radius) */20px;
-    transition: var(--bs-navbar-toggler-transition);
-}
-
-
-/* TOAST */
-
-.toast {
-    display: block;
-    position: fixed;
-    z-index: 15;
-    bottom: 10vh;
-    right: 3vw;
-}
-
 header, section, footer {
     /*SNAP SCROLL*/
+    /*height: 100vh;
+    width: 100vw;*/
     scroll-snap-align: start;
 }
 
@@ -288,9 +128,10 @@ section {
     /* background-color: var(--bg-color); */
 
     width: 100%;
-    height: auto;
+    height: 100vh;
 
     padding: 2em;
+    /*padding: 2em 2em 5em 2em;*/
     margin-bottom: 5em;
 }
 
@@ -342,7 +183,7 @@ h2 {
 p {
     font-size: 1.5em;
     text-align: left;
-    color: black;
+    color: rgb(255, 255, 255);
 
     margin-bottom: 1em;
 }
@@ -387,7 +228,7 @@ p {
 
 #dream-team a:hover {
     color: var(--orange-color);
-    transition: all 0.5s ease;
+    transition: all 4s ease;
 }
 
 #light-teal-dream {
@@ -402,7 +243,6 @@ p {
     height: auto;
     width: 100%;
 }
-
 
 #marivi h4, #clara h4 {
     font-family: "Instrument Serif", serif;
@@ -458,7 +298,6 @@ p {
     /*ARREGLAR PQ SE DESBORDA*/
 }
 
-
 /*ASTERISCOS WHAT WE DO*/
 
 #orange-1-3 {
@@ -475,43 +314,6 @@ p {
     right: 15vw;
     top: 379%;
 }
-
-
-/*OR WORK*/
-
-.gallery {
-    padding-top: 1em;
-}
-
-.gallery-img {
-    height: auto;
-    width: 100%;
-
-    padding-bottom: 1em;
-}
-
-.photo-gallery .container {
-    max-width: 100%;
-}
-
-.gallery-more {
-    display: flex;
-    justify-content: center;
-    padding-top: 2em;
-    font-family: "Instrument serif", serif;
-    text-decoration: none;
-
-    font-size: 1.5em;
-
-    border-radius: 100px;
-}
-
-.gallery-more p {
-    margin: 0;
-    /* padding-right: 0.5em;
-    padding-left: 0.5em; */
-}
-
 
 /*SOCIALS*/
 /* #social {
@@ -530,10 +332,90 @@ p {
 
 #social a:hover {
     color: var(--orange-color);
-    transition: all 0.2s ease;
+    transition: all 4s ease;
 }
 
-/*FOOTER*/
+/* CONTACT US */
+
+#redirect {
+    height: auto;
+    width: 100%;
+
+    z-index: 13;
+    position: fixed;
+
+    top: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact-form {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    margin-bottom: 5em;
+}
+
+form {
+    background-color: var(--orange-color);
+    padding: 1.1em;
+    margin: auto;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-left {
+    padding-right: 0.5em;
+}
+
+.form-right {
+    padding-left: 0.5em;
+}
+
+.form-100 {
+    height: auto;
+    width: 100%;
+}
+
+#inputAddress2 {
+    height: 15em;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+.btn-primary {
+    display: flex;
+    text-align: center;
+    border-radius: 50px;
+    background-color: var(--body-color);
+    font-size: 1em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#button-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
 
 footer {
     padding: 2em;
@@ -543,8 +425,9 @@ footer {
 }
 
 footer h1, footer li, footer ul {
-    color: white;
+    color: var(--bg-color);
     background-color: transparent;
+   
 }
 
 #special-foot {
@@ -588,7 +471,6 @@ footer p {
     font-weight: 400;
     font-style: normal;
     font-size: 0.15em;
-    color: white;
 
     margin-bottom: 0;
 }
@@ -614,7 +496,7 @@ footer a {
 
 footer a:hover {
     color: var(--orange-color);
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 footer iframe{
@@ -624,26 +506,96 @@ footer iframe{
     border-radius: 20px;
 }
 
-/*
+.mainbox {
+    background-color: var(--orange-color);
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-.instrument-serif-regular {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-.instrument-serif-regular-italic {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: italic;
+.mainbox p {
+    text-align: center;
+    font-size: 1.9rem;
 }
 
-.instrument-sans-<uniquifier> {
-  font-family: "Instrument Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+.mainbox span {
+    text-align: center;
+    font-size: 4rem;
 }
-*/
+  
+.err {
+    color: var(--bg-color);
+    font-family: "Instrument Serif", serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 40vw;
+    top: 8%;
+}
+  
+.asterisco {
+    position: absolute;
+    font-size: 8rem;
+    left: 43vw;
+    top: 15%;
+    color: var(--bg-color);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+  
+.err2 {
+      color: var(--bg-color);
+      font-family: "Instrument Serif", serif;
+      font-size: 11rem;
+      position:absolute;
+      left: 55vw;      
+      top: 8%;
+}
+  
+.msg {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    font-family: "Instrument Sans", serif;
+    font-size: 1.6rem;
+    width: 75%;
+    color: var(--bg-color);
+
+    bottom: 15%;
+}
+  
+a {
+    text-decoration: none;
+    color: var(--bg-color);
+    
+}
+  
+a:hover {
+    text-decoration: underline;
+    color: var(--teal-color);
+}
+
+.returning {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    color: var(--bg-color);
+
+}
+
+.returning:hover {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    color: var(--teal-color);
+
+}
