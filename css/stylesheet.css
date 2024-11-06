@@ -5,9 +5,6 @@
     --teal-color: #4cbba0;
     --grey-color: #d9d9d9;
     --low-teal-color: hsla(165, 45%, 52%, 0.374);
-
-    --lightbox: rgb(0 0 0 / 0.75);
-    --carousel-text: #fff;
 }
 
 html {
@@ -22,6 +19,26 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23000" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>'), auto;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--low-teal-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--teal-color);
 }
 
 header {
@@ -95,11 +112,6 @@ video {
     }
 }
 
-/*nav {
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
-}*/
-
 nav, .navbar {
     z-index: 10;
     position: fixed;
@@ -132,7 +144,6 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 }
 
 .dropdown {
-    /*margin-left: 10em;*/
     position: relative;
     left: 0;  
 }
@@ -145,13 +156,6 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     right: 1em;
     bottom: 0.7em;
 }
-
-/*.dropdown-toggle {
-    position: absolute;
-    /*right: -35vw;*//*
-    white-space: nowrap;
-    left: 50%;
-}*/
 
 .menu-show {
     display: block;
@@ -220,14 +224,13 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 #logo {
     z-index: 13;
     position: fixed;
-    /* height: auto;
-    width: auto; */
+
     height: auto;
     width: 100%;
 
     top: 5vh;
 
-    display: flex;
+    display: flex !important;
     justify-content: flex-end;
     /* padding-right: 2vw; */
     padding-right: 2em;
@@ -237,6 +240,22 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     width: 15%;
     /* mix-blend-mode: difference; */
     
+}
+
+.toast {
+    display: block;
+    position: fixed;
+    z-index: 15;
+    bottom: 12vh;
+    right: 3vw;
+
+    /* .toast:not(.show) {
+        display: block;
+        position: absolute;
+        z-index: 15;
+        bottom: 15vh;
+        right: 3vw;
+    } */
 }
 
 header, section, footer {
@@ -255,7 +274,6 @@ section {
     height: auto;
 
     padding: 2em;
-    /*padding: 2em 2em 5em 2em;*/
     margin-bottom: 5em;
 }
 
@@ -589,8 +607,4 @@ footer iframe{
   font-variation-settings:
     "wdth" 100;
 }
-
 */
-
-/* PRUEBA GALERIA CLASE */
-
