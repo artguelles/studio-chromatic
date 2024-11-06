@@ -490,6 +490,10 @@ p {
     padding-bottom: 1em;
 }
 
+.photo-gallery .container {
+    max-width: 100%;
+}
+
 
 /*SOCIALS*/
 /* #social {

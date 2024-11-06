@@ -56,7 +56,7 @@
 }
 
 .lightbox-modal .carousel-indicators [data-bs-target] {
-    background-color: var(--carousel-text) !important;
+    background-color: white !important;
 }
 
 .lightbox-modal .carousel-inner {

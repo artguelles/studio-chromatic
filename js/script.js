@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-.logo-fixed {
+/* .logo-fixed {
     display: flex !important; 
     justify-content: flex-end;
     padding-right: 2em;
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .logo-none {
     display: none !important;
-}
+} */
 
 // GALERIA
 document.addEventListener("DOMContentLoaded", () => {
