@@ -7,10 +7,10 @@
     --low-teal-color: hsla(165, 45%, 52%, 0.374);
 }
 
-html {
+/* html {
     /*SNAP SCROLL*/
-    /* scroll-snap-type: y mandatory; */
-}
+    /*scroll-snap-type: y mandatory;
+} */
 
 body {
     background-color: var(--bg-color);
@@ -81,13 +81,16 @@ header p {
     background-color: var(--low-teal-color);
     /*opacity: 0.7;*/
 
+    height: 100%;
+    width: 100%;
     z-index: 2;
 }
 
 #overlay-vid img {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
+    object-fit: cover;
 
 }
 
