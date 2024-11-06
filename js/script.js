@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*AL LLEGAR AL FOOTER, NAV DESAPARECE JUNTO AL LOGO*/
 
-/*GALERIA*/
+// HACER QUE EN VEZ DE SELECCIONAR EL HEADER Y EL FOOTER, QUE SOLO SE MUESTRE EN EL MAIN + AÑADIR ETIQUETA MAIN
 document.addEventListener("DOMContentLoaded", function () {
 
     $(window).scroll(function(){
@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Selecciona el logo y el footer
     const logo = document.getElementById("logo");
     const footer = document.querySelector("footer");
+
 
     if (logo && footer) { // Asegúrate de que los elementos existen
         // Crea un Intersection Observer
@@ -49,11 +50,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("hola!");
                     
                     // Oculta el logo cuando el footer es visible
-                    logo.style.display = "none";
+                    // logo.style.display = "none";
+                    logo.classList.add("logo-none");
+
                 } else {
                     console.log("adios!");
                     
-                    logo.style.display = "block";
+                    logo.classList.remove("logo-none");
+
                     // Muestra el logo cuando el footer no es visible
                 }
             });
@@ -61,21 +65,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Observa el footer
         observer.observe(footer);
+        
     } else {
         console.error("No se encontraron los elementos logo o footer.");
     }
     });
 });
 
-/* .logo-fixed {
-    display: flex !important; 
-    justify-content: flex-end;
-    padding-right: 2em;
-}
 
-.logo-none {
-    display: none !important;
-} */
 
 // GALERIA
 document.addEventListener("DOMContentLoaded", () => {
