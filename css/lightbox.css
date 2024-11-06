@@ -73,7 +73,7 @@
     left: 0;
     padding-bottom: 2rem;
     background-color: var(--lightbox);
-    color: var(--carousel-text) !important;
+    color: white !important;
 }
 
 .lightbox-modal .carousel-control-prev,

@@ -21,14 +21,26 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23000" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>'), auto;
 }
 
-.toast {
-    display: block;
-    position: fixed;
-    z-index: 15;
-    bottom: 10vh;
-    right: 3vw;
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--low-teal-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--teal-color);
 }
 
 .asterisco {
@@ -75,6 +87,7 @@ body {
     background-color: var(--teal-color);
     font-size: 1em;
     color: var(--bg-color);
+    font-family: "Instrument Sans", serif;
 }
 
 .rounded {

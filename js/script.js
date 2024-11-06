@@ -1,6 +1,8 @@
 console.log("Hello world");
 console.log("BY MARIVÍ & CLARA");
 
+
+
 /*ANIMACIONES AOS*/
 AOS.init();
 
@@ -30,20 +32,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*GALERIA*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona el logo y el footer
+
+    $(window).scroll(function(){
+        console.log("Scroll!");
+            // Selecciona el logo y el footer
     const logo = document.getElementById("logo");
     const footer = document.querySelector("footer");
 
     if (logo && footer) { // Asegúrate de que los elementos existen
         // Crea un Intersection Observer
         const observer = new IntersectionObserver((entries) => {
+            console.log(entries);
+            
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
+                    console.log("hola!");
+                    
                     // Oculta el logo cuando el footer es visible
                     logo.style.display = "none";
                 } else {
-                    // Muestra el logo cuando el footer no es visible
+                    console.log("adios!");
+                    
                     logo.style.display = "block";
+                    // Muestra el logo cuando el footer no es visible
                 }
             });
         }, { threshold: 0.1 });
@@ -53,7 +64,18 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("No se encontraron los elementos logo o footer.");
     }
+    });
 });
+
+.logo-fixed {
+    display: flex !important; 
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.logo-none {
+    display: none !important;
+}
 
 // GALERIA
 document.addEventListener("DOMContentLoaded", () => {
