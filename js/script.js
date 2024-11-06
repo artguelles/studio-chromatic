@@ -12,8 +12,16 @@ var typed = new Typed('#element', {
 });
 
 /* TOASTS */
-const toastElList = document.querySelectorAll('.toast')
-const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+/* const toastElList = document.querySelectorAll('.toast')
+const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option)) */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toastElList = document.querySelectorAll('.toast');
+    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl));
+
+    // Show all toasts on page load (you can control this manually if desired)
+    toastList.forEach(toast => toast.show());
+});
 
 /*AL HACER SCROLL, APARECE LOGO SUPERIOR DERECHA*/
 

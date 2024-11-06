@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="media/svg/favicon-2.svg">
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- STYLESHEET -->
-    <link href="css/contact.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDIO CHROMATIC</title>
+  <!--BY MARIA VICTORIA & CLARA-->
+
+
+  <!--FAVICON-->
+  <link rel="icon" type="image/x-icon" href="media/svg/favicon-2.svg">
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--STYLESHEET-->
+  <link href="css/contact.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="logo">
         <a href="index.html" id="redirect"><img src="media/svg/logo.svg" alt="logo-studio"></a>
     </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+              <img src="media/svg/favicon-2.svg" class="rounded me-2" alt="fav-logo" height="20" width="20">
+              <strong class="me-auto">Listen to our playlist!</strong>
+              <small class="text-body-secondary">Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4PU7QsmlJggCRAPG7Ukvds?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+      </div>
+    </div>
+
 
     <section id="contact-us">
         <h1>
@@ -80,32 +110,32 @@
     <section id="contact-form">
         <h3>Feel free to write down the following information & we'll get back to you!</h3>
         <form>
-        <div class="form-row">
-          <!-- row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 -->
-          <div class="form-group col-md-6 form-left">
-            <label for="inputName4">Name</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="My name is...">
-          </div>
-          <div class="form-group col-md-6 form-right">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputmail4" placeholder="My email is...">
-          </div>
-        </div>
-        
-        <div class="form-row">
+          <div class="form-row">
+            <!-- row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 -->
             <div class="form-group col-md-6 form-left">
-                <label for="inputState">Service to be assisted</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Select option</option>
-                  <option>BRANDING</option>
-                  <option>BRANDING</option>
-                </select>
+              <label for="inputName4">Name</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="My name is...">
             </div>
             <div class="form-group col-md-6 form-right">
-              <label for="inputSubject4">Brief subject</label>
-              <input type="text" class="form-control" id="inputmail4" placeholder="My subject is...">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputmail4" placeholder="My email is...">
             </div>
           </div>
+          
+          <div class="form-row">
+              <div class="form-group col-md-6 form-left">
+                  <label for="inputState">Service to be assisted</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Select option</option>
+                    <option>BRANDING</option>
+                    <option>BRANDING</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-6 form-right">
+                <label for="inputSubject4">Brief subject</label>
+                <input type="text" class="form-control" id="inputmail4" placeholder="My subject is...">
+              </div>
+            </div>
 
         <!-- <div class="form-group">
             <label for="inputState">Service to be assisted</label>
@@ -119,10 +149,10 @@
             <input type="text" class="form-control" id="inputBrief4" placeholder="My ">
         </select>
         </div> -->
-        <div class="form-group form-100">
-            <label for="inputAddress2">Describe the subject briefly</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Hello! I would like to contact you because...">
-        </div>
+          <div class="form-group form-100">
+              <label for="inputAddress2">Describe the subject briefly</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Hello! I would like to contact you because...">
+          </div>
         <!-- <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">City</label>
@@ -148,10 +178,10 @@
             </label>
           </div>
         </div> -->
-        <div id="button-form">
-        <button type="submit" class="btn btn-primary">Send</button>
-        </div>
-      </form>
+          <div id="button-form" data-aos="zoom-in">
+          <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
     </section>
 
 
@@ -214,8 +244,12 @@
           </div>
     </footer>
 
-    <!-- BOOTSTRAP -->
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--JAVASCRIPT-->
+    <script src="js/contact.js"></script>
 </body>
 </html>

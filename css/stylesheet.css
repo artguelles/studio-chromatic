@@ -242,26 +242,31 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     
 }
 
+/* MENU HAMBURGUESA */
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 2;
+    color: var(--body-color);
+    background-color: var(--teal-color);
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: /* var(--bs-navbar-toggler-border-radius) */20px;
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+
+/* TOAST */
+
 .toast {
     display: block;
     position: fixed;
     z-index: 15;
-    bottom: 12vh;
+    bottom: 10vh;
     right: 3vw;
-
-    /* .toast:not(.show) {
-        display: block;
-        position: absolute;
-        z-index: 15;
-        bottom: 15vh;
-        right: 3vw;
-    } */
 }
 
 header, section, footer {
     /*SNAP SCROLL*/
-    /*height: 100vh;
-    width: 100vw;*/
     scroll-snap-align: start;
 }
 
