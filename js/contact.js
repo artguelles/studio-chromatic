@@ -12,3 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show all toasts on page load (you can control this manually if desired)
     toastList.forEach(toast => toast.show());
 });
+
+// VENTANA MODAL ENVIO FORMULARIO
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

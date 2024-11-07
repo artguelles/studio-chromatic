@@ -72,8 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
 // GALERIA
 document.addEventListener("DOMContentLoaded", () => {
     // --- Create LightBox
@@ -207,7 +205,3 @@ document.addEventListener("DOMContentLoaded", () => {
         exitFS();
     });
 });
-
-
-/*VENTANA MODAL FORMULARIO*/
-

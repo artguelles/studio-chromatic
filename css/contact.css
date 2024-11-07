@@ -47,7 +47,6 @@ body {
     position: absolute;
 }
 
-
 .toast {
     display: block;
     position: fixed;
@@ -116,7 +115,7 @@ body {
     
 }
 
-header, section, footer {
+section, footer {
     /*SNAP SCROLL*/
     /*height: 100vh;
     width: 100vw;*/
@@ -127,10 +126,8 @@ section {
     /*height: 100vh;
     width: auto; */
     /* background-color: var(--bg-color); */
-
     width: 100%;
     height: auto;
-
     padding: 2em;
     /*padding: 2em 2em 5em 2em;*/
     margin-bottom: 5em;
@@ -142,12 +139,9 @@ h1 {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-    
-    
     z-index: 8;
     position: relative;
     top: -5vh;
-
     margin-bottom: 0;
 }
 
@@ -155,7 +149,6 @@ h1 {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: italic;
-
     background-color: transparent;
 }
 
@@ -185,7 +178,6 @@ p {
     font-size: 1.5em;
     text-align: left;
     color: rgb(255, 255, 255);
-
     margin-bottom: 1em;
 }
 
@@ -204,91 +196,6 @@ p {
     width: 100%;
 }
 
-/*WHO ARE WE*/
-
-#display-dream {
-    display: flex;
-    flex-direction: column;
-}
-
-#dream-team > h4 {
-    border-bottom: 1.5px solid black;
-    padding-bottom: 0.5em;
-}
-
-#dream-team p {
-    font-size: 1em;
-    font-weight: 200;
-    
-}
-
-#dream-team a {
-    color: black;
-    text-decoration: none;
-}
-
-#dream-team a:hover {
-    color: var(--orange-color);
-    transition: all 4s ease;
-}
-
-#light-teal-dream {
-    top: -21%;
-    left: 78%;
-}
-
-#marivi {
-    border-bottom: 1.5px solid black;
-    padding-bottom: 0.5em;
-    flex-direction: row;
-    height: auto;
-    width: 100%;
-}
-
-#marivi h4, #clara h4 {
-    font-family: "Instrument Serif", serif;
-    font-size: 2em;
-}
-
-#marivi, #clara {
-    padding-top: 1em;
-    display: flex;
-    flex-direction: row;
-
-    height: auto;
-    width: 100%;
-}
-
-.left-team {
-    width: 60%;
-}
-
-.right-team {
-    width: 40%;
-    font-family: "Instrument Serif", serif;
-    font-size: 0.8em;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end
-}
-
-.right-team li {
-    justify-items: flex-end;
-}
-
-#teamwork {
-    position: absolute;
-    bottom: -17%;
-    width: fit-content;
-    left: 45%;
-}
-
-#teamwork h3 {
-    font-size: 5em;
-    width: auto;
-}
-
 #off-set {
     position: absolute;
     right: -20%;
@@ -297,44 +204,6 @@ p {
     margin-top: -6%;
 
     /*ARREGLAR PQ SE DESBORDA*/
-}
-
-
-/*ASTERISCOS WHAT WE DO*/
-
-#orange-1-3 {
-    right: 25vw;
-    top: 339%;;
-}
-
-#light-teal-1-3 {
-    right: 5vw;
-    top: 352%;
-}
-
-#light-teal-2-3 {
-    right: 15vw;
-    top: 379%;
-}
-
-/*SOCIALS*/
-/* #social {
-    height: 100vh;
-} */
-
-#social .asterisco {
-    left: 32%;
-    top: 50%;
-}
-
-#social a {
-    color: black;
-    text-decoration: none;
-}
-
-#social a:hover {
-    color: var(--orange-color);
-    transition: all 4s ease;
 }
 
 /* CONTACT US */
@@ -506,4 +375,51 @@ footer iframe{
     height: auto;
     border: 10px var(--orange-color);
     border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.submit {
+    margin: 0.5em;
+    padding: 0.7em;
+    border-radius: 50px;
+    background-color: var(--orange-color);
+    text-decoration: none;
+    color: var(--bg-color);
+    border: none;
+}
+
+.submit:hover {
+    margin: 0.5em;
+    padding: 0.7em;
+    border-radius: 50px;
+    background-color: var(--teal-color);
+    text-decoration: none;
+    color: var(--bg-color);
+    border: none;
+}
+
+.btn-secondary {
+    margin: 0.5em;
+    padding: 0.7em;
+    border-radius: 50px;
+    background-color: #fca15f;
+    border: none;
+}
+
+.btn-secondary:hover {
+    margin: 0.5em;
+    padding: 0.7em;
+    border-radius: 50px;
+    background-color: var(--teal-color);
+    border: none;
+}
+
+@media screen and (max-width: 770px) {
+    .form-row {
+        flex-direction: column;
+    }
 }
