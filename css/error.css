@@ -599,3 +599,162 @@ a:hover {
     color: var(--teal-color);
 
 }
+
+@media screen and (min-width: 2001px) {
+    .asterisco {
+        left: 45vw;
+        top: 20%;
+    }
+
+    .err {
+        left: 42vw;
+        top: 15%;    
+    }
+
+    .err2 {
+        top: 15%; 
+        left: 54vw;   
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .err {
+        left: 39vw;
+        top: 8%;
+
+    }
+
+    .asterisco {
+        left: 42vw;
+    }
+
+    .err2 {
+        left: 53vw;
+        top: 8%;
+
+    }
+
+}
+
+@media screen and (max-width: 1976px) {
+    .err {
+        left: 40vw;
+        top: 10%;
+    }
+
+    .asterisco {
+        left: 43vw;
+        top: 15%;
+    }
+
+    .err2 {
+        left: 55vw;      
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .mainbox p {
+        font-size: 1.7rem;
+    }
+
+    .err {
+        left: 39vw;
+    }
+
+    .err2 {
+        left: 59vw;
+    }
+    
+}
+
+@media screen and (max-width: 835px) {
+    .mainbox p {
+        font-size: 1.6rem;
+    }
+
+    .err {
+        left: 35vw;
+    }
+
+    .asterisco {
+        left: 39vw;
+    }
+
+    .err2 {
+        left: 58vw;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .mainbox p {
+        font-size: 1.5rem;
+    }
+
+    .err {
+        left: 33vw;
+    }
+
+    .err2 {
+        left: 58vw;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .mainbox p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .mainbox p {
+        font-size: 1.3rem;
+    }
+
+    .asterisco {
+        left: 37vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .err {
+        left: 31vw;
+    }
+
+    .err2 {
+        left: 62vw;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .err {
+        left: 27vw;
+    }
+
+    .asterisco {
+        left: 34vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .err {
+        left: 17vw;
+        top: 15%;
+    }
+
+    .asterisco {
+        left: 25vw;
+        top: 20%;
+    }
+    
+    .err2 {
+        left: 60vw;
+        top: 15%;
+    }
+
+    .mainbox p {
+        font-size: 1.3rem;
+    }
+
+}
