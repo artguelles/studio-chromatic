@@ -15,10 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // VENTANA MODAL ENVIO FORMULARIO
 
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+// const myModal = document.getElementById('myModal')
+// const myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
+// myModal.addEventListener('shown.bs.modal', () => {
+//   myInput.focus()
+// })
+
+// JQUERY
+
+const myModal = $('#myModal');
+const myInput = $('#myInput');
+
+myModal.on('shown.bs.modal', () => {
+  myInput.focus();
+});
 
