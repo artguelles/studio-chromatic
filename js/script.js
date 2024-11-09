@@ -1,8 +1,6 @@
 console.log("Hello world");
 console.log("BY MARIVÍ & CLARA");
 
-
-
 /*ANIMACIONES AOS*/
 AOS.init();
 
@@ -13,35 +11,82 @@ var typed = new Typed('#element', {
     loop: true,
 });
 
-/* TOASTS */
-/* const toastElList = document.querySelectorAll('.toast')
-const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option)) */
-
+/* TOAST */
 document.addEventListener('DOMContentLoaded', () => {
     const toastElList = document.querySelectorAll('.toast');
     const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl));
 
-    // Show all toasts on page load (you can control this manually if desired)
     toastList.forEach(toast => toast.show());
 });
 
-/*AL HACER SCROLL, APARECE LOGO SUPERIOR DERECHA*/
+/* AL DARLE CLICK A UN BOTON DEL MENU, SE QUITA LA CLASE */
+$(document).ready(function() {
+    $('.navbar-collapse a:not(.dropdown-toggle)').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+});
 
+/*AL LLEGAR AL FOOTER, NAV DESAPARECE*/
+$(document).ready(function () {
+    const $nav = $(".navbar");
+    const $footer = $("footer");
 
-/*AL LLEGAR AL FOOTER, NAV DESAPARECE JUNTO AL LOGO*/
+    if ($nav.length && $footer.length) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    /* console.log("hola!"); */
+                    $nav.addClass("nav-none");
+                } else {
+                    /* console.log("adios!"); */
+                    $nav.removeClass("nav-none");
+                }
+            });
+        }, { threshold: 0.1 });
 
+        observer.observe($footer[0]); 
+
+    } else {
+        console.error("No se encontraron los elementos navbar o footer.");
+    }
+});
+
+/* lo cambiamos a jquery */
+/* document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector(".navbar");
+    const footer = document.querySelector("footer");
+
+    if (nav && footer) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    /* console.log("hola!"); */
+                    /* nav.classList.add("nav-none");
+                } else {
+                    /* console.log("adios!"); */
+                    /* nav.classList.remove("nav-none");
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(footer);
+
+    } else {
+        console.error("No se encontraron los elementos navbar o footer.");
+    }
+}); */
+
+//AL HACER SCROLL FUERA DE HEADER, APARECE LOGO SUPERIOR DERECHA//
 // HACER QUE EN VEZ DE SELECCIONAR EL HEADER Y EL FOOTER, QUE SOLO SE MUESTRE EN EL MAIN + AÑADIR ETIQUETA MAIN
 document.addEventListener("DOMContentLoaded", function () {
 
     $(window).scroll(function(){
         console.log("Scroll!");
-            // Selecciona el logo y el footer
     const logo = document.getElementById("logo");
-    const footer = document.querySelector("footer");
+    const header = document.querySelector("header");
 
 
-    if (logo && footer) { // Asegúrate de que los elementos existen
-        // Crea un Intersection Observer
+    if (logo && header) {
         const observer = new IntersectionObserver((entries) => {
             console.log(entries);
             
@@ -57,24 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("adios!");
                     
                     logo.classList.remove("logo-none");
-
-                    // Muestra el logo cuando el footer no es visible
                 }
             });
         }, { threshold: 0.1 });
 
-        // Observa el footer
-        observer.observe(footer);
+        observer.observe(header);
         
     } else {
-        console.error("No se encontraron los elementos logo o footer.");
+        console.error("No se encontraron los elementos logo o header.");
     }
     });
 });
 
 // GALERIA
 document.addEventListener("DOMContentLoaded", () => {
-    // --- Create LightBox
     const galleryGrid = document.querySelector(".gallery-grid");
     const links = galleryGrid.querySelectorAll("a");
     const imgs = galleryGrid.querySelectorAll("img");
