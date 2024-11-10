@@ -98,7 +98,8 @@ header p {
 
 video {
     width: auto;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 100%;
     vertical-align: middle;
 }
 
